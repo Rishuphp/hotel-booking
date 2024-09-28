@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2024 at 10:25 AM
+-- Generation Time: Sep 28, 2024 at 04:49 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -54,7 +54,7 @@ CREATE TABLE `rooms` (
   `checkin` date NOT NULL,
   `checkout` date NOT NULL,
   `name` text NOT NULL,
-  `phone` int(100) NOT NULL,
+  `phone` bigint(255) NOT NULL,
   `book` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -63,21 +63,9 @@ CREATE TABLE `rooms` (
 --
 
 INSERT INTO `rooms` (`room_id`, `room_cat`, `checkin`, `checkout`, `name`, `phone`, `book`) VALUES
-(23, 'Family', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(24, 'Family', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(25, 'Family', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(26, 'Family', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(27, 'Family', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(28, 'Super Comfort', '2024-09-27', '2024-09-28', 'user', 2147483647, 'true'),
-(29, 'Super Comfort', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(30, 'Super Comfort', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(31, 'Super Comfort', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(32, 'Super Comfort', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(33, 'Duplex', '2024-09-01', '2024-09-15', 'rishu', 2147483647, 'true'),
-(34, 'Duplex', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(35, 'Duplex', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(36, 'Duplex', '0000-00-00', '0000-00-00', '', 0, 'false'),
-(37, 'Duplex', '0000-00-00', '0000-00-00', '', 0, 'false');
+(23, 'Family', '2024-09-05', '2024-09-16', 'user', 8888888888, 'true'),
+(28, 'Super Comfort', '2024-09-03', '2024-09-14', 'rishu', 7376709731, 'true'),
+(33, 'Duplex', '2024-09-01', '2024-09-22', 'client 1', 2222222222, 'true');
 
 -- --------------------------------------------------------
 
